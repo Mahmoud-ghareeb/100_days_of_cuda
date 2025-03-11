@@ -64,5 +64,9 @@ int main()
         printf("\n");
     }
 
+    cudaFree(mat_d);
+    cudaFree(out_d);
+    free(out);
+    
     return 0;
 }
